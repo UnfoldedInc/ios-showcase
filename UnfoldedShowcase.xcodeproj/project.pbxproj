@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD24AFC02474283C00BCE873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD24AFBF2474283C00BCE873 /* AppDelegate.swift */; };
+		CD24B0042474286A00BCE873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD24AFD42474286A00BCE873 /* Assets.xcassets */; };
+		CD24B0082474286A00BCE873 /* arrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD24AFD92474286A00BCE873 /* arrow.framework */; };
+		CD24B0092474286A00BCE873 /* shaderc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD24AFDA2474286A00BCE873 /* shaderc.framework */; };
+		CD24B00C2474286A00BCE873 /* json.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD24AFDD2474286A00BCE873 /* json.framework */; };
+		CD24B0102474286A00BCE873 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CD24AFFB2474286A00BCE873 /* README.md */; };
+		CD24B0112474286A00BCE873 /* heathrow-flights.ndjson in Resources */ = {isa = PBXBuildFile; fileRef = CD24AFFE2474286A00BCE873 /* heathrow-flights.ndjson */; };
+		CD24B0122474286A00BCE873 /* airports.ndjson in Resources */ = {isa = PBXBuildFile; fileRef = CD24AFFF2474286A00BCE873 /* airports.ndjson */; };
+		CD24B0132474286A00BCE873 /* manhattan.ndjson in Resources */ = {isa = PBXBuildFile; fileRef = CD24B0012474286A00BCE873 /* manhattan.ndjson */; };
+		CD24B023247428E900BCE873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD24B021247428E900BCE873 /* LaunchScreen.storyboard */; };
+		CD24B024247428E900BCE873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD24B022247428E900BCE873 /* Main.storyboard */; };
+		CD24B02A2474299A00BCE873 /* ManhattanPopulationDeck.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD24B0292474299A00BCE873 /* ManhattanPopulationDeck.mm */; };
+		CD24B02C24742C4900BCE873 /* ManhattanPopulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD24B02B24742C4900BCE873 /* ManhattanPopulationViewController.swift */; };
+		CD24B02F24742CB900BCE873 /* HeathrowFlightsDeck.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD24B02E24742CB900BCE873 /* HeathrowFlightsDeck.mm */; };
+		CD24B03124742D4F00BCE873 /* HeathrowFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD24B03024742D4F00BCE873 /* HeathrowFlightsViewController.swift */; };
+		CDC016AD2476D7AF00C0823C /* deck.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC016A82476D7AE00C0823C /* deck.gl.framework */; };
+		CDC016AE2476D7AF00C0823C /* math.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC016A92476D7AE00C0823C /* math.gl.framework */; };
+		CDC016AF2476D7AF00C0823C /* loaders.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC016AA2476D7AF00C0823C /* loaders.gl.framework */; };
+		CDC016B02476D7AF00C0823C /* luma.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC016AB2476D7AF00C0823C /* luma.gl.framework */; };
+		CDC016B12476D7AF00C0823C /* probe.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC016AC2476D7AF00C0823C /* probe.gl.framework */; };
+		CDDEF6812474CEB200D09647 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF6802474CEB200D09647 /* MetalKit.framework */; };
+		CDDEF69824752E1700D09647 /* webgpu_cpp.o in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF69724752E1700D09647 /* webgpu_cpp.o */; };
+		CDDEF6A524752F9C00D09647 /* dawn_native.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF6A224752F8300D09647 /* dawn_native.framework */; };
+		CDDEF6A624752F9C00D09647 /* dawn_native.framework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CDDEF6A224752F8300D09647 /* dawn_native.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CDDEF6A724752F9D00D09647 /* dawn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF6A124752F8300D09647 /* dawn.framework */; };
+		CDDEF6A824752F9D00D09647 /* dawn.framework in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CDDEF6A124752F8300D09647 /* dawn.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD24B0172474287D00BCE873 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CDDEF6A824752F9D00D09647 /* dawn.framework in Embed Libraries */,
+				CDDEF6A624752F9C00D09647 /* dawn_native.framework in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD24AFBC2474283B00BCE873 /* Unfolded.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unfolded.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD24AFBF2474283C00BCE873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD24AFCD2474283D00BCE873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD24AFD42474286A00BCE873 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD24AFD92474286A00BCE873 /* arrow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = arrow.framework; sourceTree = "<group>"; };
+		CD24AFDA2474286A00BCE873 /* shaderc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = shaderc.framework; sourceTree = "<group>"; };
+		CD24AFDD2474286A00BCE873 /* json.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = json.framework; sourceTree = "<group>"; };
+		CD24AFFB2474286A00BCE873 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CD24AFFE2474286A00BCE873 /* heathrow-flights.ndjson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "heathrow-flights.ndjson"; sourceTree = "<group>"; };
+		CD24AFFF2474286A00BCE873 /* airports.ndjson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = airports.ndjson; sourceTree = "<group>"; };
+		CD24B0012474286A00BCE873 /* manhattan.ndjson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = manhattan.ndjson; sourceTree = "<group>"; };
+		CD24B021247428E900BCE873 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD24B022247428E900BCE873 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CD24B0272474299900BCE873 /* UnfoldedShowcase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnfoldedShowcase-Bridging-Header.h"; sourceTree = "<group>"; };
+		CD24B0282474299A00BCE873 /* ManhattanPopulationDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManhattanPopulationDeck.h; sourceTree = "<group>"; };
+		CD24B0292474299A00BCE873 /* ManhattanPopulationDeck.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ManhattanPopulationDeck.mm; sourceTree = "<group>"; };
+		CD24B02B24742C4900BCE873 /* ManhattanPopulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManhattanPopulationViewController.swift; sourceTree = "<group>"; };
+		CD24B02D24742CB900BCE873 /* HeathrowFlightsDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeathrowFlightsDeck.h; sourceTree = "<group>"; };
+		CD24B02E24742CB900BCE873 /* HeathrowFlightsDeck.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HeathrowFlightsDeck.mm; sourceTree = "<group>"; };
+		CD24B03024742D4F00BCE873 /* HeathrowFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeathrowFlightsViewController.swift; sourceTree = "<group>"; };
+		CDC016A82476D7AE00C0823C /* deck.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = deck.gl.framework; sourceTree = "<group>"; };
+		CDC016A92476D7AE00C0823C /* math.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = math.gl.framework; sourceTree = "<group>"; };
+		CDC016AA2476D7AF00C0823C /* loaders.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = loaders.gl.framework; sourceTree = "<group>"; };
+		CDC016AB2476D7AF00C0823C /* luma.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = luma.gl.framework; sourceTree = "<group>"; };
+		CDC016AC2476D7AF00C0823C /* probe.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = probe.gl.framework; sourceTree = "<group>"; };
+		CDDEF6802474CEB200D09647 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		CDDEF69724752E1700D09647 /* webgpu_cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = webgpu_cpp.o; sourceTree = "<group>"; };
+		CDDEF6A124752F8300D09647 /* dawn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = dawn.framework; sourceTree = "<group>"; };
+		CDDEF6A224752F8300D09647 /* dawn_native.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = dawn_native.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD24AFB92474283B00BCE873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC016AE2476D7AF00C0823C /* math.gl.framework in Frameworks */,
+				CD24B0092474286A00BCE873 /* shaderc.framework in Frameworks */,
+				CDDEF6A724752F9D00D09647 /* dawn.framework in Frameworks */,
+				CDC016B12476D7AF00C0823C /* probe.gl.framework in Frameworks */,
+				CD24B00C2474286A00BCE873 /* json.framework in Frameworks */,
+				CDDEF69824752E1700D09647 /* webgpu_cpp.o in Frameworks */,
+				CDC016AF2476D7AF00C0823C /* loaders.gl.framework in Frameworks */,
+				CD24B0082474286A00BCE873 /* arrow.framework in Frameworks */,
+				CDC016B02476D7AF00C0823C /* luma.gl.framework in Frameworks */,
+				CDC016AD2476D7AF00C0823C /* deck.gl.framework in Frameworks */,
+				CDDEF6812474CEB200D09647 /* MetalKit.framework in Frameworks */,
+				CDDEF6A524752F9C00D09647 /* dawn_native.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD24AFB32474283B00BCE873 = {
+			isa = PBXGroup;
+			children = (
+				CD24AFBE2474283B00BCE873 /* UnfoldedShowcase */,
+				CD24AFBD2474283B00BCE873 /* Products */,
+				CDDEF67F2474CEB100D09647 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD24AFBD2474283B00BCE873 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD24AFBC2474283B00BCE873 /* Unfolded.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD24AFBE2474283B00BCE873 /* UnfoldedShowcase */ = {
+			isa = PBXGroup;
+			children = (
+				CD24B0272474299900BCE873 /* UnfoldedShowcase-Bridging-Header.h */,
+				CD24AFBF2474283C00BCE873 /* AppDelegate.swift */,
+				CD24B019247428D200BCE873 /* View */,
+				CD24B0262474295200BCE873 /* Utility */,
+				CD24AFD32474286A00BCE873 /* Resources */,
+			);
+			path = UnfoldedShowcase;
+			sourceTree = "<group>";
+		};
+		CD24AFD32474286A00BCE873 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD24AFCD2474283D00BCE873 /* Info.plist */,
+				CD24AFD42474286A00BCE873 /* Assets.xcassets */,
+				CD24AFD52474286A00BCE873 /* Frameworks */,
+				CD24AFDE2474286A00BCE873 /* dawn */,
+				CD24AFFA2474286A00BCE873 /* data */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD24AFD52474286A00BCE873 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDC016A82476D7AE00C0823C /* deck.gl.framework */,
+				CDC016AA2476D7AF00C0823C /* loaders.gl.framework */,
+				CDC016AB2476D7AF00C0823C /* luma.gl.framework */,
+				CDC016A92476D7AE00C0823C /* math.gl.framework */,
+				CDC016AC2476D7AF00C0823C /* probe.gl.framework */,
+				CDDEF6A224752F8300D09647 /* dawn_native.framework */,
+				CDDEF6A124752F8300D09647 /* dawn.framework */,
+				CD24AFD92474286A00BCE873 /* arrow.framework */,
+				CD24AFDA2474286A00BCE873 /* shaderc.framework */,
+				CD24AFDD2474286A00BCE873 /* json.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD24AFDE2474286A00BCE873 /* dawn */ = {
+			isa = PBXGroup;
+			children = (
+				CD24AFF62474286A00BCE873 /* libs */,
+			);
+			path = dawn;
+			sourceTree = "<group>";
+		};
+		CD24AFF62474286A00BCE873 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				CDDEF69724752E1700D09647 /* webgpu_cpp.o */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		CD24AFFA2474286A00BCE873 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				CD24AFFB2474286A00BCE873 /* README.md */,
+				CD24AFFC2474286A00BCE873 /* examples */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		CD24AFFC2474286A00BCE873 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				CD24AFFD2474286A00BCE873 /* flight-paths */,
+				CD24B0002474286A00BCE873 /* manhattan-population */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		CD24AFFD2474286A00BCE873 /* flight-paths */ = {
+			isa = PBXGroup;
+			children = (
+				CD24AFFE2474286A00BCE873 /* heathrow-flights.ndjson */,
+				CD24AFFF2474286A00BCE873 /* airports.ndjson */,
+			);
+			path = "flight-paths";
+			sourceTree = "<group>";
+		};
+		CD24B0002474286A00BCE873 /* manhattan-population */ = {
+			isa = PBXGroup;
+			children = (
+				CD24B0012474286A00BCE873 /* manhattan.ndjson */,
+			);
+			path = "manhattan-population";
+			sourceTree = "<group>";
+		};
+		CD24B019247428D200BCE873 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD24B021247428E900BCE873 /* LaunchScreen.storyboard */,
+				CD24B022247428E900BCE873 /* Main.storyboard */,
+				CD24B0252474290500BCE873 /* Examples */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD24B0252474290500BCE873 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				CD24B02B24742C4900BCE873 /* ManhattanPopulationViewController.swift */,
+				CD24B03024742D4F00BCE873 /* HeathrowFlightsViewController.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		CD24B0262474295200BCE873 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CD24B0282474299A00BCE873 /* ManhattanPopulationDeck.h */,
+				CD24B0292474299A00BCE873 /* ManhattanPopulationDeck.mm */,
+				CD24B02D24742CB900BCE873 /* HeathrowFlightsDeck.h */,
+				CD24B02E24742CB900BCE873 /* HeathrowFlightsDeck.mm */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		CDDEF67F2474CEB100D09647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDDEF6802474CEB200D09647 /* MetalKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD24AFBB2474283B00BCE873 /* UnfoldedShowcase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD24AFD02474283D00BCE873 /* Build configuration list for PBXNativeTarget "UnfoldedShowcase" */;
+			buildPhases = (
+				CD24AFB82474283B00BCE873 /* Sources */,
+				CD24AFB92474283B00BCE873 /* Frameworks */,
+				CD24AFBA2474283B00BCE873 /* Resources */,
+				CD24B0172474287D00BCE873 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnfoldedShowcase;
+			productName = UnfoldedShowcase;
+			productReference = CD24AFBC2474283B00BCE873 /* Unfolded.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD24AFB42474283B00BCE873 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Unfolded;
+				TargetAttributes = {
+					CD24AFBB2474283B00BCE873 = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+				};
+			};
+			buildConfigurationList = CD24AFB72474283B00BCE873 /* Build configuration list for PBXProject "UnfoldedShowcase" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD24AFB32474283B00BCE873;
+			productRefGroup = CD24AFBD2474283B00BCE873 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD24AFBB2474283B00BCE873 /* UnfoldedShowcase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD24AFBA2474283B00BCE873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD24B023247428E900BCE873 /* LaunchScreen.storyboard in Resources */,
+				CD24B0122474286A00BCE873 /* airports.ndjson in Resources */,
+				CD24B0112474286A00BCE873 /* heathrow-flights.ndjson in Resources */,
+				CD24B0102474286A00BCE873 /* README.md in Resources */,
+				CD24B0042474286A00BCE873 /* Assets.xcassets in Resources */,
+				CD24B024247428E900BCE873 /* Main.storyboard in Resources */,
+				CD24B0132474286A00BCE873 /* manhattan.ndjson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD24AFB82474283B00BCE873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD24B02C24742C4900BCE873 /* ManhattanPopulationViewController.swift in Sources */,
+				CD24B02F24742CB900BCE873 /* HeathrowFlightsDeck.mm in Sources */,
+				CD24AFC02474283C00BCE873 /* AppDelegate.swift in Sources */,
+				CD24B02A2474299A00BCE873 /* ManhattanPopulationDeck.mm in Sources */,
+				CD24B03124742D4F00BCE873 /* HeathrowFlightsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD24AFCE2474283D00BCE873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/UnfoldedShowcase/Resources/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/UnfoldedShowcase/Resources/dawn/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD24AFCF2474283D00BCE873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/UnfoldedShowcase/Resources/Frameworks";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/UnfoldedShowcase/Resources/dawn/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD24AFD12474283D00BCE873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UnfoldedShowcase/Resources/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "LUMAGL_ENABLE_BACKEND_METAL=ON";
+				INFOPLIST_FILE = UnfoldedShowcase/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UnfoldedShowcase/Resources/dawn/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.unfolded.showcase;
+				PRODUCT_NAME = Unfolded;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UnfoldedShowcase/UnfoldedShowcase-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD24AFD22474283D00BCE873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UnfoldedShowcase/Resources/Frameworks",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "LUMAGL_ENABLE_BACKEND_METAL=ON";
+				INFOPLIST_FILE = UnfoldedShowcase/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UnfoldedShowcase/Resources/dawn/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.unfolded.showcase;
+				PRODUCT_NAME = Unfolded;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UnfoldedShowcase/UnfoldedShowcase-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD24AFB72474283B00BCE873 /* Build configuration list for PBXProject "UnfoldedShowcase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD24AFCE2474283D00BCE873 /* Debug */,
+				CD24AFCF2474283D00BCE873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD24AFD02474283D00BCE873 /* Build configuration list for PBXNativeTarget "UnfoldedShowcase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD24AFD12474283D00BCE873 /* Debug */,
+				CD24AFD22474283D00BCE873 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD24AFB42474283B00BCE873 /* Project object */;
+}
