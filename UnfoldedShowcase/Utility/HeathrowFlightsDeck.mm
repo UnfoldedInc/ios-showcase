@@ -97,6 +97,8 @@ auto createScatterplotLayer(const std::string &dataPath) -> std::shared_ptr<Scat
 
 @implementation HeathrowFlightsDeck
 
+#pragma mark - DeckWrapper implementation
+
 - (void)run:(MTKView*)view {
   auto flightDataPath = std::string([[[NSBundle mainBundle] pathForResource:@"heathrow-flights" ofType:@"ndjson"] UTF8String]);
   auto airportDataPath = std::string([[[NSBundle mainBundle] pathForResource:@"airports" ofType:@"ndjson"] UTF8String]);
@@ -109,13 +111,11 @@ auto createScatterplotLayer(const std::string &dataPath) -> std::shared_ptr<Scat
   deckProps->width = view.bounds.size.width;
   deckProps->height = view.bounds.size.height;
 
-  view.paused = true;
-  view.enableSetNeedsDisplay = false;
   deckProps->drawingOptions = std::make_shared<lumagl::MetalAnimationLoop::Options>(view);
 
   self.deck = std::make_shared<Deck>(deckProps);
   __weak HeathrowFlightsDeck* weakSelf = self;
-  dispatch_queue_t renderingQueue = dispatch_queue_create("Rendering", NULL);
+  dispatch_queue_t renderingQueue = dispatch_queue_create("ai.unfolded.rendering", NULL);
   dispatch_async(renderingQueue, ^{
     weakSelf.deck->run([&deckProps](Deck *deck) {
       static double bearing = 0.0;

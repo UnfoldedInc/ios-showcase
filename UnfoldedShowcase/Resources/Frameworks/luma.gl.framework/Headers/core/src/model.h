@@ -34,7 +34,6 @@
 namespace lumagl {
 
 /// \brief Collection of keys that provide additional attribute context when present in input scheme metadata.
-// TODO(ilija@unfolded.ai): Document metadata properties and the behavior they trigger once we finalize the list
 struct AttributePropertyKeys {};
 
 struct UniformDescriptor {
@@ -58,6 +57,8 @@ class Model {
 
   void setAttributes(const std::shared_ptr<garrow::Table>& attributes);
   void setInstancedAttributes(const std::shared_ptr<garrow::Table>& attributes);
+
+  void setIndices(const std::shared_ptr<garrow::Array>& indices);
 
   void setUniformBuffer(uint32_t binding, const wgpu::Buffer& buffer, uint64_t offset = 0,
                         uint64_t size = wgpu::kWholeSize);
@@ -90,10 +91,12 @@ class Model {
   void _setVertexBuffers(wgpu::RenderPassEncoder pass);
 
   wgpu::Device _device;
+  std::shared_ptr<garrow::Schema> _attributeSchema;
+  std::shared_ptr<garrow::Schema> _instancedAttributeSchema;
   std::shared_ptr<garrow::Table> _attributeTable;
   std::shared_ptr<garrow::Table> _instancedAttributeTable;
+  std::shared_ptr<garrow::Array> _indices;
   std::vector<UniformDescriptor> _uniformDescriptors;
-  // TODO(ilija@unfolded.ai) Should probably be a map
   std::vector<std::optional<utils::BindingInitializationHelper>> _bindings;
 };
 

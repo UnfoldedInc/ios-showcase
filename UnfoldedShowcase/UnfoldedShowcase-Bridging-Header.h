@@ -20,3 +20,4 @@
 
 #import "ManhattanPopulationDeck.h"
 #import "HeathrowFlightsDeck.h"
+#import "VancouverBlocksDeck.h"

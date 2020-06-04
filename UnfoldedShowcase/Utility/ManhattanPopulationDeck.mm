@@ -73,6 +73,8 @@ auto createScatterplotLayer(const std::string &dataPath) -> std::shared_ptr<Scat
 
 @implementation ManhattanPopulationDeck
 
+#pragma mark - DeckWrapper implementation
+
 - (void)run:(MTKView *)view {
   auto populationDataPath = std::string([[[NSBundle mainBundle] pathForResource:@"manhattan" ofType:@"ndjson"] UTF8String]);
 
@@ -86,12 +88,9 @@ auto createScatterplotLayer(const std::string &dataPath) -> std::shared_ptr<Scat
 
   deckProps->drawingOptions = std::make_shared<lumagl::MetalAnimationLoop::Options>(view);
 
-  view.paused = true;
-  view.enableSetNeedsDisplay = false;
-
   self.deck = std::make_shared<Deck>(deckProps);
   __weak ManhattanPopulationDeck* weakSelf = self;
-  dispatch_queue_t renderingQueue = dispatch_queue_create("Render", NULL);
+  dispatch_queue_t renderingQueue = dispatch_queue_create("ai.unfolded.rendering", NULL);
   dispatch_async(renderingQueue, ^{
     weakSelf.deck->run([&deckProps](Deck *deck) {
       static double bearing = 0.0;

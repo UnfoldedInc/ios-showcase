@@ -18,12 +18,8 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
-#import <MetalKit/MTKView.h>
+#import "DeckWrapper.h"
 
-@interface ManhattanPopulationDeck : NSObject
-
-- (void)run:(MTKView*)view;
-- (void)stop;
+@interface ManhattanPopulationDeck : NSObject<DeckWrapper>
 
 @end

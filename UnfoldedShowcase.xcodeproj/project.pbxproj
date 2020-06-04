@@ -19,14 +19,17 @@
 		CD24B023247428E900BCE873 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD24B021247428E900BCE873 /* LaunchScreen.storyboard */; };
 		CD24B024247428E900BCE873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD24B022247428E900BCE873 /* Main.storyboard */; };
 		CD24B02A2474299A00BCE873 /* ManhattanPopulationDeck.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD24B0292474299A00BCE873 /* ManhattanPopulationDeck.mm */; };
-		CD24B02C24742C4900BCE873 /* ManhattanPopulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD24B02B24742C4900BCE873 /* ManhattanPopulationViewController.swift */; };
 		CD24B02F24742CB900BCE873 /* HeathrowFlightsDeck.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD24B02E24742CB900BCE873 /* HeathrowFlightsDeck.mm */; };
-		CD24B03124742D4F00BCE873 /* HeathrowFlightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD24B03024742D4F00BCE873 /* HeathrowFlightsViewController.swift */; };
-		CDC016AD2476D7AF00C0823C /* deck.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC016A82476D7AE00C0823C /* deck.gl.framework */; };
-		CDC016AE2476D7AF00C0823C /* math.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC016A92476D7AE00C0823C /* math.gl.framework */; };
-		CDC016AF2476D7AF00C0823C /* loaders.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC016AA2476D7AF00C0823C /* loaders.gl.framework */; };
-		CDC016B02476D7AF00C0823C /* luma.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC016AB2476D7AF00C0823C /* luma.gl.framework */; };
-		CDC016B12476D7AF00C0823C /* probe.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC016AC2476D7AF00C0823C /* probe.gl.framework */; };
+		CDA7B52B2488C502008C3576 /* VancouverBlocksDeck.mm in Sources */ = {isa = PBXBuildFile; fileRef = CDA7B52A2488C502008C3576 /* VancouverBlocksDeck.mm */; };
+		CDA7B53B2488C64A008C3576 /* vancouver-blocks-simplified.ndjson in Resources */ = {isa = PBXBuildFile; fileRef = CDA7B5382488C64A008C3576 /* vancouver-blocks-simplified.ndjson */; };
+		CDA7B53F2488C88E008C3576 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7B53E2488C88E008C3576 /* DeckViewController.swift */; };
+		CDA7B5432488CAF6008C3576 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7B5422488CAF6008C3576 /* HomeViewController.swift */; };
+		CDA7B5452488CF88008C3576 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5442488CF88008C3576 /* Metal.framework */; };
+		CDA7B5552488ED0B008C3576 /* math.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5502488ED0A008C3576 /* math.gl.framework */; };
+		CDA7B5562488ED0B008C3576 /* probe.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5512488ED0A008C3576 /* probe.gl.framework */; };
+		CDA7B5572488ED0B008C3576 /* luma.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5522488ED0A008C3576 /* luma.gl.framework */; };
+		CDA7B5582488ED0B008C3576 /* deck.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5532488ED0B008C3576 /* deck.gl.framework */; };
+		CDA7B5592488ED0B008C3576 /* loaders.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5542488ED0B008C3576 /* loaders.gl.framework */; };
 		CDDEF6812474CEB200D09647 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF6802474CEB200D09647 /* MetalKit.framework */; };
 		CDDEF69824752E1700D09647 /* webgpu_cpp.o in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF69724752E1700D09647 /* webgpu_cpp.o */; };
 		CDDEF6A524752F9C00D09647 /* dawn_native.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF6A224752F8300D09647 /* dawn_native.framework */; };
@@ -67,15 +70,20 @@
 		CD24B0272474299900BCE873 /* UnfoldedShowcase-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UnfoldedShowcase-Bridging-Header.h"; sourceTree = "<group>"; };
 		CD24B0282474299A00BCE873 /* ManhattanPopulationDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManhattanPopulationDeck.h; sourceTree = "<group>"; };
 		CD24B0292474299A00BCE873 /* ManhattanPopulationDeck.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ManhattanPopulationDeck.mm; sourceTree = "<group>"; };
-		CD24B02B24742C4900BCE873 /* ManhattanPopulationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManhattanPopulationViewController.swift; sourceTree = "<group>"; };
 		CD24B02D24742CB900BCE873 /* HeathrowFlightsDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeathrowFlightsDeck.h; sourceTree = "<group>"; };
 		CD24B02E24742CB900BCE873 /* HeathrowFlightsDeck.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HeathrowFlightsDeck.mm; sourceTree = "<group>"; };
-		CD24B03024742D4F00BCE873 /* HeathrowFlightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeathrowFlightsViewController.swift; sourceTree = "<group>"; };
-		CDC016A82476D7AE00C0823C /* deck.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = deck.gl.framework; sourceTree = "<group>"; };
-		CDC016A92476D7AE00C0823C /* math.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = math.gl.framework; sourceTree = "<group>"; };
-		CDC016AA2476D7AF00C0823C /* loaders.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = loaders.gl.framework; sourceTree = "<group>"; };
-		CDC016AB2476D7AF00C0823C /* luma.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = luma.gl.framework; sourceTree = "<group>"; };
-		CDC016AC2476D7AF00C0823C /* probe.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = probe.gl.framework; sourceTree = "<group>"; };
+		CDA7B5292488C502008C3576 /* VancouverBlocksDeck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VancouverBlocksDeck.h; sourceTree = "<group>"; };
+		CDA7B52A2488C502008C3576 /* VancouverBlocksDeck.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = VancouverBlocksDeck.mm; sourceTree = "<group>"; };
+		CDA7B5382488C64A008C3576 /* vancouver-blocks-simplified.ndjson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "vancouver-blocks-simplified.ndjson"; sourceTree = "<group>"; };
+		CDA7B53D2488C6F9008C3576 /* DeckWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeckWrapper.h; sourceTree = "<group>"; };
+		CDA7B53E2488C88E008C3576 /* DeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
+		CDA7B5422488CAF6008C3576 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CDA7B5442488CF88008C3576 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		CDA7B5502488ED0A008C3576 /* math.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = math.gl.framework; sourceTree = "<group>"; };
+		CDA7B5512488ED0A008C3576 /* probe.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = probe.gl.framework; sourceTree = "<group>"; };
+		CDA7B5522488ED0A008C3576 /* luma.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = luma.gl.framework; sourceTree = "<group>"; };
+		CDA7B5532488ED0B008C3576 /* deck.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = deck.gl.framework; sourceTree = "<group>"; };
+		CDA7B5542488ED0B008C3576 /* loaders.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = loaders.gl.framework; sourceTree = "<group>"; };
 		CDDEF6802474CEB200D09647 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		CDDEF69724752E1700D09647 /* webgpu_cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = webgpu_cpp.o; sourceTree = "<group>"; };
 		CDDEF6A124752F8300D09647 /* dawn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = dawn.framework; sourceTree = "<group>"; };
@@ -87,16 +95,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC016AE2476D7AF00C0823C /* math.gl.framework in Frameworks */,
+				CDA7B5552488ED0B008C3576 /* math.gl.framework in Frameworks */,
 				CD24B0092474286A00BCE873 /* shaderc.framework in Frameworks */,
 				CDDEF6A724752F9D00D09647 /* dawn.framework in Frameworks */,
-				CDC016B12476D7AF00C0823C /* probe.gl.framework in Frameworks */,
 				CD24B00C2474286A00BCE873 /* json.framework in Frameworks */,
+				CDA7B5452488CF88008C3576 /* Metal.framework in Frameworks */,
 				CDDEF69824752E1700D09647 /* webgpu_cpp.o in Frameworks */,
-				CDC016AF2476D7AF00C0823C /* loaders.gl.framework in Frameworks */,
 				CD24B0082474286A00BCE873 /* arrow.framework in Frameworks */,
-				CDC016B02476D7AF00C0823C /* luma.gl.framework in Frameworks */,
-				CDC016AD2476D7AF00C0823C /* deck.gl.framework in Frameworks */,
+				CDA7B5572488ED0B008C3576 /* luma.gl.framework in Frameworks */,
+				CDA7B5592488ED0B008C3576 /* loaders.gl.framework in Frameworks */,
+				CDA7B5562488ED0B008C3576 /* probe.gl.framework in Frameworks */,
+				CDA7B5582488ED0B008C3576 /* deck.gl.framework in Frameworks */,
 				CDDEF6812474CEB200D09647 /* MetalKit.framework in Frameworks */,
 				CDDEF6A524752F9C00D09647 /* dawn_native.framework in Frameworks */,
 			);
@@ -149,11 +158,11 @@
 		CD24AFD52474286A00BCE873 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CDC016A82476D7AE00C0823C /* deck.gl.framework */,
-				CDC016AA2476D7AF00C0823C /* loaders.gl.framework */,
-				CDC016AB2476D7AF00C0823C /* luma.gl.framework */,
-				CDC016A92476D7AE00C0823C /* math.gl.framework */,
-				CDC016AC2476D7AF00C0823C /* probe.gl.framework */,
+				CDA7B5532488ED0B008C3576 /* deck.gl.framework */,
+				CDA7B5542488ED0B008C3576 /* loaders.gl.framework */,
+				CDA7B5522488ED0A008C3576 /* luma.gl.framework */,
+				CDA7B5502488ED0A008C3576 /* math.gl.framework */,
+				CDA7B5512488ED0A008C3576 /* probe.gl.framework */,
 				CDDEF6A224752F8300D09647 /* dawn_native.framework */,
 				CDDEF6A124752F8300D09647 /* dawn.framework */,
 				CD24AFD92474286A00BCE873 /* arrow.framework */,
@@ -193,6 +202,7 @@
 			children = (
 				CD24AFFD2474286A00BCE873 /* flight-paths */,
 				CD24B0002474286A00BCE873 /* manhattan-population */,
+				CDA7B5362488C64A008C3576 /* vancouver-blocks */,
 			);
 			path = examples;
 			sourceTree = "<group>";
@@ -219,6 +229,7 @@
 			children = (
 				CD24B021247428E900BCE873 /* LaunchScreen.storyboard */,
 				CD24B022247428E900BCE873 /* Main.storyboard */,
+				CDA7B5422488CAF6008C3576 /* HomeViewController.swift */,
 				CD24B0252474290500BCE873 /* Examples */,
 			);
 			path = View;
@@ -227,8 +238,7 @@
 		CD24B0252474290500BCE873 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
-				CD24B02B24742C4900BCE873 /* ManhattanPopulationViewController.swift */,
-				CD24B03024742D4F00BCE873 /* HeathrowFlightsViewController.swift */,
+				CDA7B53E2488C88E008C3576 /* DeckViewController.swift */,
 			);
 			path = Examples;
 			sourceTree = "<group>";
@@ -236,17 +246,29 @@
 		CD24B0262474295200BCE873 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				CDA7B53D2488C6F9008C3576 /* DeckWrapper.h */,
 				CD24B0282474299A00BCE873 /* ManhattanPopulationDeck.h */,
 				CD24B0292474299A00BCE873 /* ManhattanPopulationDeck.mm */,
 				CD24B02D24742CB900BCE873 /* HeathrowFlightsDeck.h */,
 				CD24B02E24742CB900BCE873 /* HeathrowFlightsDeck.mm */,
+				CDA7B5292488C502008C3576 /* VancouverBlocksDeck.h */,
+				CDA7B52A2488C502008C3576 /* VancouverBlocksDeck.mm */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		CDA7B5362488C64A008C3576 /* vancouver-blocks */ = {
+			isa = PBXGroup;
+			children = (
+				CDA7B5382488C64A008C3576 /* vancouver-blocks-simplified.ndjson */,
+			);
+			path = "vancouver-blocks";
 			sourceTree = "<group>";
 		};
 		CDDEF67F2474CEB100D09647 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDA7B5442488CF88008C3576 /* Metal.framework */,
 				CDDEF6802474CEB200D09647 /* MetalKit.framework */,
 			);
 			name = Frameworks;
@@ -318,6 +340,7 @@
 				CD24B0102474286A00BCE873 /* README.md in Resources */,
 				CD24B0042474286A00BCE873 /* Assets.xcassets in Resources */,
 				CD24B024247428E900BCE873 /* Main.storyboard in Resources */,
+				CDA7B53B2488C64A008C3576 /* vancouver-blocks-simplified.ndjson in Resources */,
 				CD24B0132474286A00BCE873 /* manhattan.ndjson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,11 +352,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD24B02C24742C4900BCE873 /* ManhattanPopulationViewController.swift in Sources */,
 				CD24B02F24742CB900BCE873 /* HeathrowFlightsDeck.mm in Sources */,
+				CDA7B53F2488C88E008C3576 /* DeckViewController.swift in Sources */,
+				CDA7B5432488CAF6008C3576 /* HomeViewController.swift in Sources */,
+				CDA7B52B2488C502008C3576 /* VancouverBlocksDeck.mm in Sources */,
 				CD24AFC02474283C00BCE873 /* AppDelegate.swift in Sources */,
 				CD24B02A2474299A00BCE873 /* ManhattanPopulationDeck.mm in Sources */,
-				CD24B03124742D4F00BCE873 /* HeathrowFlightsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +414,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/UnfoldedShowcase/Resources/dawn/include";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -444,7 +468,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/UnfoldedShowcase/Resources/dawn/include";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -469,7 +493,6 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "LUMAGL_ENABLE_BACKEND_METAL=ON";
 				INFOPLIST_FILE = UnfoldedShowcase/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -503,7 +526,6 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = "LUMAGL_ENABLE_BACKEND_METAL=ON";
 				INFOPLIST_FILE = UnfoldedShowcase/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
