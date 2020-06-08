@@ -25,11 +25,12 @@ namespace lumagl {
 
 struct Size {
  public:
+  Size() : width{0}, height{0} {}
   Size(int width, int height) : width{width}, height{height} {}
 
   template <typename T>
   auto operator*(const T& value) -> Size {
-    return Size{this->width * static_cast<int>(value), this->height * static_cast<int>(value)};
+    return Size{static_cast<int>(this->width * value), static_cast<int>(this->height * value)};
   }
 
   int width;
@@ -37,5 +38,8 @@ struct Size {
 };
 
 }  // namespace lumagl
+
+auto operator==(const lumagl::Size& s1, const lumagl::Size& s2) -> bool;
+auto operator!=(const lumagl::Size& s1, const lumagl::Size& s2) -> bool;
 
 #endif  // LUMAGL_CORE_SIZE_H

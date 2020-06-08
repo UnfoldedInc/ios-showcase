@@ -25,11 +25,11 @@
 		CDA7B53F2488C88E008C3576 /* DeckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7B53E2488C88E008C3576 /* DeckViewController.swift */; };
 		CDA7B5432488CAF6008C3576 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7B5422488CAF6008C3576 /* HomeViewController.swift */; };
 		CDA7B5452488CF88008C3576 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5442488CF88008C3576 /* Metal.framework */; };
-		CDA7B5552488ED0B008C3576 /* math.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5502488ED0A008C3576 /* math.gl.framework */; };
-		CDA7B5562488ED0B008C3576 /* probe.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5512488ED0A008C3576 /* probe.gl.framework */; };
-		CDA7B5572488ED0B008C3576 /* luma.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5522488ED0A008C3576 /* luma.gl.framework */; };
-		CDA7B5582488ED0B008C3576 /* deck.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5532488ED0B008C3576 /* deck.gl.framework */; };
-		CDA7B5592488ED0B008C3576 /* loaders.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDA7B5542488ED0B008C3576 /* loaders.gl.framework */; };
+		CDAE9BE6248E1180002B6253 /* deck.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAE9BE1248E117F002B6253 /* deck.gl.framework */; };
+		CDAE9BE7248E1181002B6253 /* loaders.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAE9BE2248E1180002B6253 /* loaders.gl.framework */; };
+		CDAE9BE8248E1181002B6253 /* luma.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAE9BE3248E1180002B6253 /* luma.gl.framework */; };
+		CDAE9BE9248E1181002B6253 /* math.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAE9BE4248E1180002B6253 /* math.gl.framework */; };
+		CDAE9BEA248E1181002B6253 /* probe.gl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDAE9BE5248E1180002B6253 /* probe.gl.framework */; };
 		CDDEF6812474CEB200D09647 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF6802474CEB200D09647 /* MetalKit.framework */; };
 		CDDEF69824752E1700D09647 /* webgpu_cpp.o in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF69724752E1700D09647 /* webgpu_cpp.o */; };
 		CDDEF6A524752F9C00D09647 /* dawn_native.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDEF6A224752F8300D09647 /* dawn_native.framework */; };
@@ -79,11 +79,11 @@
 		CDA7B53E2488C88E008C3576 /* DeckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckViewController.swift; sourceTree = "<group>"; };
 		CDA7B5422488CAF6008C3576 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CDA7B5442488CF88008C3576 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
-		CDA7B5502488ED0A008C3576 /* math.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = math.gl.framework; sourceTree = "<group>"; };
-		CDA7B5512488ED0A008C3576 /* probe.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = probe.gl.framework; sourceTree = "<group>"; };
-		CDA7B5522488ED0A008C3576 /* luma.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = luma.gl.framework; sourceTree = "<group>"; };
-		CDA7B5532488ED0B008C3576 /* deck.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = deck.gl.framework; sourceTree = "<group>"; };
-		CDA7B5542488ED0B008C3576 /* loaders.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = loaders.gl.framework; sourceTree = "<group>"; };
+		CDAE9BE1248E117F002B6253 /* deck.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = deck.gl.framework; sourceTree = "<group>"; };
+		CDAE9BE2248E1180002B6253 /* loaders.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = loaders.gl.framework; sourceTree = "<group>"; };
+		CDAE9BE3248E1180002B6253 /* luma.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = luma.gl.framework; sourceTree = "<group>"; };
+		CDAE9BE4248E1180002B6253 /* math.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = math.gl.framework; sourceTree = "<group>"; };
+		CDAE9BE5248E1180002B6253 /* probe.gl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = probe.gl.framework; sourceTree = "<group>"; };
 		CDDEF6802474CEB200D09647 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
 		CDDEF69724752E1700D09647 /* webgpu_cpp.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = webgpu_cpp.o; sourceTree = "<group>"; };
 		CDDEF6A124752F8300D09647 /* dawn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = dawn.framework; sourceTree = "<group>"; };
@@ -95,17 +95,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDA7B5552488ED0B008C3576 /* math.gl.framework in Frameworks */,
+				CDAE9BE9248E1181002B6253 /* math.gl.framework in Frameworks */,
+				CDAE9BE6248E1180002B6253 /* deck.gl.framework in Frameworks */,
 				CD24B0092474286A00BCE873 /* shaderc.framework in Frameworks */,
 				CDDEF6A724752F9D00D09647 /* dawn.framework in Frameworks */,
 				CD24B00C2474286A00BCE873 /* json.framework in Frameworks */,
 				CDA7B5452488CF88008C3576 /* Metal.framework in Frameworks */,
+				CDAE9BE7248E1181002B6253 /* loaders.gl.framework in Frameworks */,
+				CDAE9BEA248E1181002B6253 /* probe.gl.framework in Frameworks */,
 				CDDEF69824752E1700D09647 /* webgpu_cpp.o in Frameworks */,
+				CDAE9BE8248E1181002B6253 /* luma.gl.framework in Frameworks */,
 				CD24B0082474286A00BCE873 /* arrow.framework in Frameworks */,
-				CDA7B5572488ED0B008C3576 /* luma.gl.framework in Frameworks */,
-				CDA7B5592488ED0B008C3576 /* loaders.gl.framework in Frameworks */,
-				CDA7B5562488ED0B008C3576 /* probe.gl.framework in Frameworks */,
-				CDA7B5582488ED0B008C3576 /* deck.gl.framework in Frameworks */,
 				CDDEF6812474CEB200D09647 /* MetalKit.framework in Frameworks */,
 				CDDEF6A524752F9C00D09647 /* dawn_native.framework in Frameworks */,
 			);
@@ -158,11 +158,11 @@
 		CD24AFD52474286A00BCE873 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CDA7B5532488ED0B008C3576 /* deck.gl.framework */,
-				CDA7B5542488ED0B008C3576 /* loaders.gl.framework */,
-				CDA7B5522488ED0A008C3576 /* luma.gl.framework */,
-				CDA7B5502488ED0A008C3576 /* math.gl.framework */,
-				CDA7B5512488ED0A008C3576 /* probe.gl.framework */,
+				CDAE9BE1248E117F002B6253 /* deck.gl.framework */,
+				CDAE9BE2248E1180002B6253 /* loaders.gl.framework */,
+				CDAE9BE3248E1180002B6253 /* luma.gl.framework */,
+				CDAE9BE4248E1180002B6253 /* math.gl.framework */,
+				CDAE9BE5248E1180002B6253 /* probe.gl.framework */,
 				CDDEF6A224752F8300D09647 /* dawn_native.framework */,
 				CDDEF6A124752F8300D09647 /* dawn.framework */,
 				CD24AFD92474286A00BCE873 /* arrow.framework */,

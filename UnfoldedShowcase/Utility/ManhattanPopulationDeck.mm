@@ -104,6 +104,14 @@ auto createScatterplotLayer(const std::string &dataPath) -> std::shared_ptr<Scat
   self.deck->stop();
 }
 
+- (void)setWidth:(int)width height:(int)height {
+  auto deckProps = self.deck->props();
+  deckProps->width = width;
+  deckProps->height = height;
+
+  self.deck->setProps(deckProps);
+}
+
 - (void)dealloc {
   [self stop];
 }

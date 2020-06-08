@@ -21,8 +21,8 @@
 // Note: This file was inspired by the Dawn codebase at https://dawn.googlesource.com/dawn/
 // Copyright 2017 The Dawn Authors http://www.apache.org/licenses/LICENSE-2.0
 
-#ifndef PROBEGL_SYSTEMUTILS_H_
-#define PROBEGL_SYSTEMUTILS_H_
+#ifndef PROBEGL_CORE_SYSTEMUTILS_H
+#define PROBEGL_CORE_SYSTEMUTILS_H
 
 namespace probegl {
 
@@ -30,4 +30,4 @@ void uSleep(unsigned int usecs);
 
 }  // namespace probegl
 
-#endif  // PROBEGL_SYSTEMUTILS_H_
+#endif  // PROBEGL_CORE_SYSTEMUTILS_H

@@ -24,8 +24,6 @@ final class DeckViewController: UIViewController {
 
   var deckWrapper: DeckWrapper!
 
-  private var isInitialized = false
-
   // MARK: - Outlets
 
   @IBOutlet private var mtkView: MTKView! {
@@ -38,19 +36,20 @@ final class DeckViewController: UIViewController {
 
   // MARK: - Lifecycle
 
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-
-    // Initializing the example here, and not in viewDidLoad in order to get the correct view bounds
-    // TODO(ilija@unfolded.ai): Move out once size updating works well
-    if (isInitialized) { return }
-    isInitialized = true
+  override func viewDidLoad() {
+    super.viewDidLoad()
 
     deckWrapper.run(mtkView)
   }
 
   deinit {
     deckWrapper.stop()
+  }
+
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+
+    deckWrapper.setWidth(Int32(mtkView.bounds.width), height: Int32(mtkView.bounds.height))
   }
 
   // MARK: - User Actions

@@ -18,13 +18,40 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
-#import <MetalKit/MTKView.h>
+#ifndef PROBEGL_CORE_ERROR_H
+#define PROBEGL_CORE_ERROR_H
 
-@protocol DeckWrapper <NSObject>
+#include <functional>
+#include <memory>
+#include <optional>
+#include <string>
 
-- (void)run:(MTKView*)view;
-- (void)stop;
-- (void)setWidth:(int)width height:(int) height;
+namespace probegl {
 
-@end
+using Error = std::optional<std::string>;
+
+template <typename T>
+auto catchError(std::function<std::shared_ptr<T>()> expression, Error& error) noexcept -> std::shared_ptr<T> {
+  error.reset();
+
+  try {
+    return expression();
+  } catch (const std::exception& ex) {
+    error = ex.what();
+    return nullptr;
+  } catch (...) {
+    error = "Operation failed with unknown error";
+    return nullptr;
+  }
+}
+
+template <typename T>
+auto catchError(std::function<T()> expression, Error& error) noexcept -> std::shared_ptr<T> {
+  return catchError<T>([expression]() { return std::make_shared<T>(expression()); }, error);
+}
+
+void catchError(std::function<void()> expression, Error& error) noexcept;
+
+}  // namespace probegl
+
+#endif  // PROBEGL_CORE_ERROR_H

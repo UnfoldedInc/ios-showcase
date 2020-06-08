@@ -30,21 +30,34 @@
 #include "./view-manager.h"
 #include "deck.gl/json.h"
 #include "luma.gl/core.h"
+#include "probe.gl/core.h"
 
 namespace deckgl {
 
 class Deck : public Component {
  public:
   class Props;
-  auto props() { return std::dynamic_pointer_cast<Props>(this->_props); }
-  void setProps(std::shared_ptr<Deck::Props> props);
-
   struct RenderingOptions;
+
+#pragma mark - Exception-free API
+
+  static auto make(probegl::Error& error, std::shared_ptr<Deck::Props> props = std::make_shared<Deck::Props>()) noexcept
+      -> std::shared_ptr<Deck>;
+  void setProps(std::shared_ptr<Deck::Props> props, probegl::Error& error) noexcept;
+
+  void run(
+      probegl::Error& error, std::function<void(Deck*)> onAfterRender = [](Deck*) {}) noexcept;
+  void draw(
+      wgpu::TextureView textureView, probegl::Error& error,
+      std::function<void(Deck*)> onAfterRender = [](Deck*) {}) noexcept;
+
+#pragma mark -
+
   explicit Deck(std::shared_ptr<Deck::Props> props = std::make_shared<Deck::Props>());
   ~Deck();
 
-  int width{100};   // Dummy value, ensure something is visible if user forgets to set window size
-  int height{100};  // Dummy value, ensure something is visible if user forgets to set window size
+  auto props() { return std::dynamic_pointer_cast<Props>(this->_props); }
+  void setProps(std::shared_ptr<Deck::Props> props);
 
   void run(std::function<void(Deck*)> onAfterRender = [](Deck*) {});
   void draw(
@@ -58,6 +71,8 @@ class Deck : public Component {
 
   auto getViews() -> std::list<std::shared_ptr<View>> { return this->viewManager->getViews(); }
 
+  auto size() -> lumagl::Size { return this->_size; };
+
   std::shared_ptr<lumagl::AnimationLoop> animationLoop;
   std::shared_ptr<ViewManager> viewManager{new ViewManager()};
   std::shared_ptr<LayerContext> context;
@@ -69,13 +84,15 @@ class Deck : public Component {
   /// \brief Get the most relevant view state: props.viewState, if supplied, shadows internal viewState.
   auto _getViewState() -> std::shared_ptr<ViewState>;
 
-  auto _createAnimationLoop(const std::shared_ptr<Deck::Props>& props) -> std::shared_ptr<lumagl::AnimationLoop>;
+  void _setSize(const lumagl::Size& size);
+
   void _redraw(wgpu::RenderPassEncoder pass, std::function<void(Deck*)> onAfterRender, bool force = false);
   void _drawLayers(wgpu::RenderPassEncoder pass, std::function<void(Deck*)> onAfterRender,
                    const std::string& redrawReason);
 
   std::optional<std::string> _needsRedraw;
   wgpu::Buffer _viewportUniformsBuffer;
+  lumagl::Size _size;
 };
 
 class Deck::Props : public Component::Props {
